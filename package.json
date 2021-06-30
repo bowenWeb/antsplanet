@@ -1,0 +1,39 @@
+{
+  "name": "wallet-dapp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env API=http://192.168.1.161:1323 DAPP_LINK=https://app.antsplanet.io nuxt -p 8000",
+    "help": "nuxt --help",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "cross-env API=https://api.antsplanet.io DAPP_LINK=https://app.antsplanet.io nuxt generate",
+    "generate:test": "cross-env API=http://192.168.1.161:1323 DAPP_LINK=http://192.168.1.193:8082 nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint": "yarn lint:js"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "compression-webpack-plugin": "^5.0.1",
+    "core-js": "^3.9.1",
+    "element-ui": "^2.15.1",
+    "nuxt": "^2.15.3",
+    "postcss-px2viewport-pro": "^1.0.1",
+    "uglifyjs-webpack-plugin": "^1.0.0",
+    "vue-clipboard2": "^0.3.1",
+    "vue-pdf": "^4.3.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^6.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.22.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-vue": "^7.7.0",
+    "node-sass": "4.12.0",
+    "sass-loader": "8.0.2"
+  }
+}
